@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageId>NaifSpiceSharp</PackageId>
+    <Version>0.3.1</Version>
+    <Authors>Yongzhen Pan</Authors>
+    <Company>Yongzhen Pan</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This is a C# wrapper for NAIF SPICE Toolkit.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>spice,naif,wrapper</PackageTags>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="$(SolutionDir)DllWrapper\x64\Release\DllWrapper.dll" Pack="true" PackagePath="runtimes\win-x64\native" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(SolutionDir)DllWrapper\x64\Release\DllWrapper.lib" Pack="true" PackagePath="runtimes\win-x64\native" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(SolutionDir)DllWrapper\x64\Release\DllWrapper.pdb" Pack="true" PackagePath="runtimes\win-x64\native" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
