@@ -2,6 +2,10 @@
 
 This is a C# wrapper for [NAIF SPICE Toolkit](https://naif.jpl.nasa.gov/naif/index.html).
 
+## Installation
+
+[Nuget](https://www.nuget.org/packages/NaifSpiceSharp/)
+
 ## Limitation
 
 * Currently only support Windows x64. More platform supports will be added if anyone needs them.
